@@ -7,8 +7,10 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr id="<%= page.id %>">
-        <% @page = page %>
-        <%= render partial: 'pages_ajax/show_form' %>
+        <td>
+          <% @page = page %>
+          <%= render partial: 'pages_ajax/show_form' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
