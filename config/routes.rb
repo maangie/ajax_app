@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  resources :pages, only: :index
 
   # The priority is based upon order of creation: first created ->
   # highest priority.
