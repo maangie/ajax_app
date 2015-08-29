@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources(:pages, path:'pages/ajax', controller: :pages_ajax,
+            only: %i(show edit update))
+
   resources :pages, only: :index
 
   # The priority is based upon order of creation: first created ->
