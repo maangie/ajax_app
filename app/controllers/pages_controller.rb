@@ -9,7 +9,6 @@ class PagesController < ApplicationController
     # @page.update(page_params)
     @pages = Page.all
     @page.update(page_params)
-    @page.save
   end
 
 private
