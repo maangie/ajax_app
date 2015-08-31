@@ -1,0 +1,11 @@
+<% @pages.each do |page| %>
+
+  <%= form_for page, remote:true do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_field :name %>
+    <p>
+      <%= f.object.updated_at %>
+    </p>
+    <%= f.submit %>
+  <% end %>
+<% end %>
